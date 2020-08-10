@@ -1,9 +1,10 @@
 :root{
     --primary-color: rgb(122, 62, 51);
     --secondary-color: rgb(255, 196, 184);
+    --dark-color: rgb(53, 31, 28);
 }
 
-*{
+*, *::before, *::after{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -101,7 +102,45 @@ h1{
 }
 
 .navbar__logo {
-    /* font-weight: 400; */
+    display:flex;
+    justify-content: start;
+    margin-top: 10px;
+}
+
+.navbar__logo p{
+    align-self: center;
+    padding: 0 10px;
+}
+
+.navbar nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+form.search{
+    display: flex;
+    justify-content: center;
+}
+form.search input{
+    width: 60%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 1px solid grey;
+    padding: 5px 0;
+}
+form.search button{
+    width: 15%;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 5px ;
+    border: 1px solid grey;
+    padding: 5px 0;
+}
+
+form.search button:hover{
+    background-color: var(--dark-color);
 }
 
 .home__showcase{
@@ -255,11 +294,34 @@ h1{
         flex-direction: column;
         height: 120px;
         padding: 20px;
+        font-size: small;
     }
 
     .navbar a {
         padding: 10px 10px;
         margin: 0 3px;
+    }
+    .navbar__logo {
+        justify-content: center;
+    }
+
+    .navbar__logo img{
+        height: 100%;
+    }
+
+    .navbar nav{
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        padding-bottom: 20px;
+    }
+
+    .home__showcase h1 {
+        font-size: 35px;
+    }
+    .home__showcase p {
+        font-size: 14px;
     }
 
     .flex--items {
@@ -274,20 +336,28 @@ h1{
     }
     
     .quotes h2{
-        top: 20%;
-        left: 35%;
-        font-size: x-large;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-700%);
+        font-size: large;
     }
     .quotes__container{
-        height: 60%;
+        height: 40%;
         width: 75%;
-        top: 30%;
-        left: 15%;
-        font-size: x-small;
+        top: 40%;
+        left: 13%;
+        font-size: xx-small;
     }
     .quote img{
         height: 50px;
         width: 50px;
+    }
+    .quote{
+        padding: 3px 15px;
+        margin: 5px 0;
+    }
+    .quotes p{
+        padding: 5px 10px;
     }
 
 }

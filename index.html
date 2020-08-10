@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <title>refactor webpage</title>
 </head>
 <body>
     <header class="home" id="home">
         <div class="home__navbar navbar">
-            <div class="navbar__logo logo">Light, Sound & Sacred geometry</div>
+            <div class="navbar__logo">
+                <img class="navbar__logo--img" src="./img/logo2.png" alt="logo" height="7%" width="13%">
+                <p>Light, Sound & Sacred geometry</p>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -18,8 +23,11 @@
                     <li><a href="#books">Books</a></li>
                     <li><a href="#videos">Videos</a></li>
                     <li><a href="#resources">Resources</a></li>
-                    <li><a href="#">search</a></li>
                 </ul>
+                <form class="search" action="action_page.php">
+                    <input type="text" placeholder=" Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
             </nav>
         </div>
         <div class="home__showcase">
