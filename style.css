@@ -12,8 +12,6 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* background: #fff; */
-    color: #333;
     line-height: 1.6;
     text-align: center;
 }
@@ -55,7 +53,7 @@ h1{
 
 
 .home{
-    background: url(./img/johannes-plenio-RwHv7LgeC7s-unsplash.jpg) no-repeat center center /cover;
+    background: url(./img/shrinkimg3.jpg) no-repeat center center /cover;
     height: 100vh;
     position: relative;
 }
@@ -76,7 +74,6 @@ h1{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #333;
     background: transparent;
     color: #fff;
     opacity: 0.8;
@@ -233,7 +230,6 @@ form.search button:hover{
     height: 100vh;
     position: relative;
     color: white;
-    /* display: flex; */
 }
 .quotes::before{
     content: "";
@@ -303,6 +299,7 @@ form.search button:hover{
     }
     .navbar__logo {
         justify-content: center;
+        margin: 15px;
     }
 
     .navbar__logo img{
@@ -335,6 +332,14 @@ form.search button:hover{
         height: auto;
     }
     
+    .about__bottom__item a{
+        margin: 0px 40px;
+    }
+
+    .about__bottom__item p{
+        margin-bottom: 25px;
+    }
+
     .quotes h2{
         top: 50%;
         left: 50%;
